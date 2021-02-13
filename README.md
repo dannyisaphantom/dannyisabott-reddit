@@ -8,4 +8,9 @@ Tools: [Python 3.9.1](https://www.python.org/downloads/), [Reddit](reddit.com) &
 - for the redirect uri i used: http://localhost: ** keep note of your client_id at the top and secret which is a longer string **
 
 ### from cmd line
-- enter > pip install praw wait for install to complete and then follow up with > pip install --upgrade praw 
+- enter:
+> pip install praw:
+- wait for install to complete and then follow up with
+> pip install --upgrade praw 
+
+now you have the latest update of praw installed
