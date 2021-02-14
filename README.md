@@ -56,8 +56,7 @@ import config
             client_secret = config.client_secret,
             user_agent = "dannyphantom v0.1")
 ```
-
-back at the cmd line, i entered reddit_bot1.py, still got the same error but i'm going to keep trying
-
+and it works! fuck yes! 
+issues regarding spacing and tab became apparent which i didnt expect but when executed on cmd it works
 
 
