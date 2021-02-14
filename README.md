@@ -57,6 +57,5 @@ import config
             user_agent = "dannyphantom v0.1")
 ```
 and it works! fuck yes! 
-issues regarding spacing and tab became apparent which i didnt expect but when executed on cmd it works
-
-
+issues regarding spacing and tab became apparent which i didnt expect but when executed on cmd it works\
+this was within Sublime Text; testing in Atom had only spacial errors which were easily fixed as well. 
