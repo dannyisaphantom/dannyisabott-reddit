@@ -14,3 +14,50 @@ Tools: [Python 3.9.1](https://www.python.org/downloads/), [Reddit](reddit.com) &
 > pip install --upgrade praw 
 
 now you have the latest update of praw installed
+
+## code editor 
+
+i am now using pyCharm; but i am going to test this within Atom as well; i have config.py that defines my login details
+```
+username="dannyisabott"
+password="x"
+client_id="y"
+client_secret="z"
+```
+then, in reddit_bot1.py i define my values like this:
+```
+import praw
+import config
+praw.Reddit(username = config.username,
+            password = config.password,
+            client_id = config.client_id,
+            client_secret = config.client_secret,
+            user_agent = "dannyphantom v0.1")
+```
+### cmd line testing
+i want to focus on where i put my file, so within my own cmd i say:
+```
+cd ~/Desktop/redditbot
+it will respond C:\users\jake\desktop\redditbot>reddit_bot1.py (which is my .py file)
+and, it will then go to C:\users\jake\redditbot (again) awesome.
+```
+keep in mind, that is my directory so be sure to change to where you save your .py file and also keep in mind nothing happened with the above code.
+this is all farily obvious to most python coders but this is primarily for me to keep tabs on so i can learn as i go
+
+i edited the reddit_bot1.py code to include:
+```
+import praw
+import config
+
+  def bot_login():
+      praw.Reddit(username = config.username,
+            password = config.password,
+            client_id = config.client_id,
+            client_secret = config.client_secret,
+            user_agent = "dannyphantom v0.1")
+```
+
+back at the cmd line, i entered reddit_bot1.py, still got the same error but i'm going to keep trying
+
+
+
