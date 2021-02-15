@@ -2,6 +2,7 @@
 
 import praw
 import config
+import time
 
 def bot_login():
     print("logging in...")
@@ -23,6 +24,9 @@ def bot_login():
                                 print ("string with \"danny phantom\" found in comment")
                                 comment.reply("oh hello there")
                                 print ("replied to comment")
+       print ("sleep now child")
+       #sleeps for 25 seconds
+       time.sleep(25)
                                
 while True:
 #dangerous this is now a spam bot until this is fixed lmao
