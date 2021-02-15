@@ -1,0 +1,31 @@
+#in this current state this is a spam bot. yikes. 
+
+import praw
+import config
+
+def bot_login():
+    print("logging in...")
+    r = praw.Reddit(username = config.username,
+                    password = config.password,
+                    client_id = config.client_id,
+                    client_secret = config.client_secret,
+                    user_agent = "dannyphantom v1.1")
+                    
+    print("logged in")
+    #kinda moot if you can see that the code works imo but apparently this is whats called "documentation" ooooohhhhh so special
+    
+    return r
+    
+   def run_bot(r):
+       print ("grabbing 25 comments")
+       for comment in r.subreddit('test).comments(limit=25)
+                       if "danny phantom" in comment.body:
+                                print ("string with \"danny phantom\" found in comment")
+                                comment.reply("oh hello there")
+                                print ("replied to comment")
+                               
+while True:
+#dangerous this is now a spam bot until this is fixed lmao
+    r = bot_login()
+    run_bot(r)
+#what ive always wanted, a buggy bot 
