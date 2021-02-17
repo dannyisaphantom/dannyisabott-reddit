@@ -3,6 +3,8 @@
 - documenting what i'm doing along the way as a way to teach myself and others if anyone ever comes across my profile (not likely)
 Tools: [Python 3.9.1](https://www.python.org/downloads/), [Reddit](reddit.com) & [Praw](https://praw.readthedocs.io/en/latest/getting_started/installation.html)
 
+- ongoing updates to the bot will follow the danny_botv1.1, 1.2, 1.3, etc format.
+
 ## reddit api access
 - create basic reddit account and follow this link: https://www.reddit.com/prefs/apps/
 - for the redirect uri i used: http://localhost: ** keep note of your client_id at the top and secret which is a longer string **
