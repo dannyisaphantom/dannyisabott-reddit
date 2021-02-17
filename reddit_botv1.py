@@ -1,4 +1,4 @@
-# a lot of this will be overhauled in the next iteratioin 
+# a significant of this will be overhauled in the next iteratioin 
 
 import praw
 import config
