@@ -16,46 +16,31 @@ Tools: [Python 3.9.1](https://www.python.org/downloads/), [Reddit](reddit.com) &
 now you have the latest update of praw installed
 
 ## code editor 
-
-i am now using pyCharm; but i am going to test this within Atom as well; i have config.py that defines my login details
+using Atom
+create a config.py so that it's formatted like below
 ```
 username="dannyisabott"
 password="x"
 client_id="y"
 client_secret="z"
 ```
+then, in cmd line of your files directory enter:
+> move config.py praw.ini
+
+after the file is converted to praw.ini open it in your text editor where you'll make some changes
+most notably you'll enter your credentials within brackets; within this praw.ini file you can now make multiple profiles for different bots and have them reference different "profiles"; see config.py to praw.ini to get a better understanding of what that means
+```
+[dannyphantombot]
+username: dannyisabott
+password: 123xyz
+client_id: xyz
+client_secret: xyz
+```
+
 then, in reddit_bot1.py i define my values like this:
 ```
 import praw
-import config
-praw.Reddit(username = config.username,
-            password = config.password,
-            client_id = config.client_id,
-            client_secret = config.client_secret,
-            user_agent = "dannyphantom v0.1")
+praw.Reddit('dannyphantombot', user_agent = "dannyphantom v0.1")
 ```
-### cmd line testing
-i want to focus on where i put my file, so within my own cmd i say:
-```
-cd ~/Desktop/redditbot
-it will respond C:\users\jake\desktop\redditbot>reddit_bot1.py (which is my .py file)
-and, it will then go to C:\users\jake\redditbot (again) awesome.
-```
-keep in mind, that is my directory so be sure to change to where you save your .py file and also keep in mind nothing happened with the above code.
-this is all farily obvious to most python coders but this is primarily for me to keep tabs on so i can learn as i go
 
-i edited the reddit_bot1.py code to include:
-```
-import praw
-import config
 
-  def bot_login():
-      praw.Reddit(username = config.username,
-            password = config.password,
-            client_id = config.client_id,
-            client_secret = config.client_secret,
-            user_agent = "dannyphantom v0.1")
-```
-and it works! fuck yes! 
-issues regarding spacing and tab became apparent which i didnt expect but when executed on cmd it works\
-this was within Sublime Text; testing in Atom had only spacial errors which were easily fixed as well. 
